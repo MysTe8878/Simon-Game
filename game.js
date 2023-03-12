@@ -49,6 +49,9 @@ function checkAnswer(gameLevel){
       console.log("wrong")
       started = false;
       nextLevel = false;
+      gamePattern = [];
+      userClickedPattern = [];
+      lvl = 0;
       $("#level-title").text("GameOver! Press Any Key to Start Again.");
     }
   }
