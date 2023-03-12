@@ -84,7 +84,7 @@ $(document).keypress(function(){
 
 })
 
-$(document).on("touchstart",function() {
+$(document).on("tap",function() {
   if (!started) {
     nextSequence(lvl);
     started = true;
