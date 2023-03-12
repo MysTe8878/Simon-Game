@@ -52,7 +52,7 @@ function checkAnswer(gameLevel){
       gamePattern = [];
       userClickedPattern = [];
       lvl = 0;
-      $("#level-title").text("GameOver! Press Any Key to Start Again.");
+      $("#level-title").text("GameOver! Press Here to Start Again.");
     }
   }
   if (nextLevel) {
@@ -75,19 +75,11 @@ checkAnswer(lvl);
 
 
 started = false;
-$(document).keypress(function(){
+$("h1").click(function(){
   if (!started) {
     nextSequence(lvl);
     started = true;
     $("#level-title").text("Level: " + lvl);
   }
 
-})
-
-$(document).on("tap",function() {
-  if (!started) {
-    nextSequence(lvl);
-    started = true;
-    $("#level-title").text("Level: " + lvl);
-  }
 })
