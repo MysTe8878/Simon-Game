@@ -74,7 +74,6 @@ checkAnswer(lvl);
 });
 
 
-
 started = false;
 $(document).keypress(function(){
   if (!started) {
