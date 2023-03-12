@@ -83,3 +83,11 @@ $(document).keypress(function(){
   }
 
 })
+
+$(document).on("touchstart",function() {
+  if (!started) {
+    nextSequence(lvl);
+    started = true;
+    $("#level-title").text("Level: " + lvl);
+  }
+})
